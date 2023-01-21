@@ -1,2 +1,1 @@
-# efficientspeech-demo
-EfficientSpeech inference examples
+# [EfficientSpeech Demo](https://roatienza.github.io/efficientspeech-demo/)
