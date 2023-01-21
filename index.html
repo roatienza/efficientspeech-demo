@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Description and Audio Samples</title>
+  <title>EfficientSpeech: An On-Device Text to Speech Model</title>
   <style>
     /* CSS for grid layout */
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
     }
     .grid-cell {
       /* Style for individual grid cells */
@@ -15,57 +15,83 @@
   </style>
 </head>
 <body>
-  <h1>Project Name</h1>
+  <h1>EfficientSpeech: An On-Device Text to Speech Model</h1>
+  <h2>Abstract</h2>
   <p>
-    Description of the project goes here.
+  State of the art (SOTA) neural text to speech (TTS) models can generate natural-sounding synthetic voices. These models are characterized by large memory footprints and substantial number of operations due to the long-standing focus on speech quality with cloud inference in mind. Neural TTS models are generally not designed to perform standalone speech syntheses on resource-constrained and no Internet access edge devices. In this work, an efficient neural TTS called <em>EfficientSpeech</em> synthesizes speech on an ARM CPU in real-time. <em>EfficientSpeech</em>  uses a shallow non-autoregressive pyramid-structure transformer forming a U-Network. <em>EfficientSpeech</em>  has 266k parameters and consumes 90 MFLOPS only or about 1% of the size and amount of computation in modern compact models such as <em>Mixer-TTS</em>. <em>EfficientSpeech</em>  achieves an average mel generation real-time factor (RTF) of 104.3  on an RPi4. Human evaluation shows only a slight degradation in audio quality as compared to <em>FastSpeech2</em>.  
   </p>
   <h2>Audio Samples</h2>
+  <h3>Lifting a print involves the use of adhesive material to remove the fingerprint powder which adheres to the original print.</h3>
   <div class="grid">
     <div class="grid-cell">
-      <h3>Sample 1</h3>
-      <p>Description of sample 1</p>
+      <h3>FastSpeech2 (30.8M)</h3>
       <audio controls>
-        <source src="sample1.wav" type="audio/wav">
+        <source src="fs2_sample1.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="grid-cell">
-      <h3>Sample 2</h3>
-      <p>Description of sample 2</p>
+      <h3>EfficientSpeech (Tiny 266k)</h3>
       <audio controls>
-        <source src="sample2.wav" type="audio/wav">
+        <source src="es_sample1.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="grid-cell">
-      <h3>Sample 3</h3>
-      <p>Description of sample 3</p>
+      <h3>EfficientSpeech (Base 4M)</h3>
       <audio controls>
-        <source src="sample3.wav" type="audio/wav">
+        <source src="es_base_sample1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <br>
+  <h3>I cannot find that calcraft was sworn in when appointed, or any exact information when the old forbidding ceremony ceased to be practiced.</h3>
+  <div class="grid">
+    <div class="grid-cell">
+      <h3>FastSpeech2 (30.8M)</h3>
+      <audio controls>
+        <source src="fs2_sample2.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="grid-cell">
-      <h3>Sample 4</h3>
-      <p>Description of sample 4</p>
+      <h3>EfficientSpeech (Tiny 266k)</h3>
       <audio controls>
-        <source src="sample4.wav" type="audio/wav">
+        <source src="es_sample2.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="grid-cell">
-      <h3>Sample 5</h3>
-      <p>Description of sample 5</p>
+      <h3>EfficientSpeech (Base 4M)</h3>
       <audio controls>
-        <source src="sample5.wav" type="audio/wav">
+        <source src="es_base_sample2.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <br>
+  <h3>Here's the identical rope at sixpence an inch.</h3>
+  <div class="grid">
+    <div class="grid-cell">
+      <h3>FastSpeech2 (30.8M)</h3>
+      <audio controls>
+        <source src="fs2_sample3.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="grid-cell">
-      <h3>Sample 6</h3>
-      <p>Description of sample 6</p>
+      <h3>EfficientSpeech (Tiny 266k)</h3>
       <audio controls>
-        <source src="sample6.wav" type="audio/wav">
+        <source src="es_sample3.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Base 4M)</h3>
+      <audio controls>
+        <source src="es_base_sample3.wav" type="audio/wav">
         Your browser does not support the audio element.
       </audio>
     </div>
