@@ -21,8 +21,10 @@
   State of the art (SOTA) neural text to speech (TTS) models can generate natural-sounding synthetic voices. These models are characterized by large memory footprints and substantial number of operations due to the long-standing focus on speech quality with cloud inference in mind. Neural TTS models are generally not designed to perform standalone speech syntheses on resource-constrained and no Internet access edge devices. In this work, an efficient neural TTS called <em>EfficientSpeech</em> synthesizes speech on an ARM CPU in real-time. <em>EfficientSpeech</em>  uses a shallow non-autoregressive pyramid-structure transformer forming a U-Network. <em>EfficientSpeech</em>  has 266k parameters and consumes 90 MFLOPS only or about 1% of the size and amount of computation in modern compact models such as <em>Mixer-TTS</em>. <em>EfficientSpeech</em>  achieves an average mel generation real-time factor (RTF) of 104.3  on an RPi4. Human evaluation shows only a slight degradation in audio quality as compared to <em>FastSpeech2</em>.  
   </p>
   <h2>Audio Samples</h2>
+
   <h3>Lifting a print involves the use of adhesive material to remove the fingerprint powder which adheres to the original print.</h3>
   <div class="grid">
+
     <div class="grid-cell">
       <h3>FastSpeech2 (30.8M)</h3>
       <audio controls>
@@ -99,6 +101,7 @@
       </audio>
     </div>
   </div>
+
   <br>
   <h3>Here's the identical rope at sixpence an inch.</h3>
   <div class="grid">
@@ -138,6 +141,7 @@
       </audio>
     </div>
   </div>
+
   <br>
   <h3>She sent brewer into the theatre to find the man and check the exits, told him about the assassination, and said, quote,</h3>
   <div class="grid">
@@ -177,5 +181,89 @@
       </audio>
     </div>
   </div>
+
+  <h2>Note: </h2>
+  <h3><a href="https://speechresearch.github.io/lightspeech/">LightSpeech</a> is not open source. LightSpeech samples below are from its project page.</h3>
+
+  <br>
+  <h3>From the time when books first took their present shape till the end of the sixteenth century, or indeed later.</h3>
+  <div class="grid">
+    <div class="grid-cell">
+      <h3>FastSpeech2 (30.8M)</h3>
+      <audio controls>
+        <source src="fs2_books.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Tiny 266k)</h3>
+      <audio controls>
+        <source src="es_books.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Small 952k)</h3>
+      <audio controls>
+        <source src="es_small_books.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Base 4M)</h3>
+      <audio controls>
+        <source src="es_base_books.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>LightSpeech (1.8M)</h3>
+      <audio controls>
+        <source src="light_books.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <br>
+  <h3>The modern printer, in the teeth of the evidence given by his own eyes, considers the single page as the unit, and prints the page in the middle of his paper.</h3>
+  <div class="grid">
+    <div class="grid-cell">
+      <h3>FastSpeech2 (30.8M)</h3>
+      <audio controls>
+        <source src="fs2_paper.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Tiny 266k)</h3>
+      <audio controls>
+        <source src="es_paper.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Small 952k)</h3>
+      <audio controls>
+        <source src="es_small_paper.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>EfficientSpeech (Base 4M)</h3>
+      <audio controls>
+        <source src="es_base_paper.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="grid-cell">
+      <h3>LightSpeech (1.8M)</h3>
+      <audio controls>
+        <source src="light_paper.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
 </body>
 </html>
